@@ -403,8 +403,6 @@ struct ProcessDebug {
 
 pub struct Process<'a, C: 'static + Chip> {
     /// Index of the process in the process table.
-    ///
-    /// Corresponds to AppId
     app_idx: usize,
 
     /// Pointer to the main Kernel struct.
