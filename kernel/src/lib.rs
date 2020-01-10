@@ -49,5 +49,8 @@ pub use crate::sched::Kernel;
 // processes.
 /// Publicly available process-related objects.
 pub mod procs {
-    pub use crate::process::{load_processes, FaultResponse, FunctionCall, Process, ProcessType};
+    pub use crate::process::{
+        load_processes, FaultResponse, FunctionCall, Process, ProcessRestartPolicy, ProcessType,
+        PrpAlways, PrpThreshold,
+    };
 }
